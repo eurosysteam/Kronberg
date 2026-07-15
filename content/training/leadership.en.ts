@@ -5,8 +5,6 @@ export const leadershipEn: TrainingTaskContent = {
   label: "Training task",
   title: "Task: Leadership with AI",
   intro: "AI bot prototypes for Sales, Marketing & Service",
-  source:
-    "documents/Aufgabenstellung_Fuehrungskraefte_KI_Bots_Kronberg_sprachlich_ueberarbeitet.docx",
   breadcrumb: {
     training: "Training",
     current: "Leadership with AI",

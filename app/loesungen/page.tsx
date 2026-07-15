@@ -5,6 +5,8 @@ import { PageFrame } from "@/components/page-frame";
 import { SectionHeader } from "@/components/section-header";
 import { useLanguage } from "@/components/language-provider";
 import { pageLabels, phaseTwoContent } from "@/content/phase-two";
+import conveyorImage from "@/pictures/alberto-rodriguez-qVpGF1mlaM8-unsplash.jpg";
+import monitoringImage from "@/pictures/Gemini_Generated_Image_3gaojp3gaojp3gao.png";
 
 export default function SolutionsPage() {
   const { locale } = useLanguage();
@@ -37,7 +39,25 @@ export default function SolutionsPage() {
       <section className="bg-[var(--color-light)] px-5 py-20 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-4">
           {content.items.map((item) => (
-            <ModuleCard item={item} imageLabel={labels.imagePlaceholder} key={item.title} />
+            <ModuleCard
+              image={
+                item.title === "Förderbänder" || item.title === "Conveyors"
+                  ? {
+                      alt: "Rollen- und Fördertechnik in einer Logistikanlage",
+                      src: conveyorImage,
+                    }
+                  : item.title === "Digitale Monitoring-Lösungen" ||
+                      item.title === "Digital monitoring solutions"
+                    ? {
+                        alt: "Digitale Anlagenüberwachung an einer Förderanlage",
+                        src: monitoringImage,
+                      }
+                    : undefined
+              }
+              item={item}
+              imageLabel={labels.imagePlaceholder}
+              key={item.title}
+            />
           ))}
         </div>
       </section>

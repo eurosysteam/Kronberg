@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: "Kronberg Fördertechnik Gruppe",
   description:
     "Fiktive Unternehmensdarstellung der Kronberg Fördertechnik Gruppe.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({

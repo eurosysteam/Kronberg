@@ -5,8 +5,6 @@ export const leadershipDe: TrainingTaskContent = {
   label: "Trainingsaufgabe",
   title: "Aufgabenstellung: Führung mit KI",
   intro: "KI-Bot-Prototypen für Sales, Marketing & Service",
-  source:
-    "documents/Aufgabenstellung_Fuehrungskraefte_KI_Bots_Kronberg_sprachlich_ueberarbeitet.docx",
   breadcrumb: {
     training: "Training",
     current: "Führung mit KI",

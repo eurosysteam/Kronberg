@@ -1,16 +1,16 @@
 "use client";
 
 import { FeatureCard } from "@/components/feature-card";
-import { ImagePlaceholder } from "@/components/image-placeholder";
+import { IndustrialImage } from "@/components/industrial-image";
 import { PageFrame } from "@/components/page-frame";
 import { SectionHeader } from "@/components/section-header";
 import { useLanguage } from "@/components/language-provider";
-import { pageLabels, phaseTwoContent } from "@/content/phase-two";
+import { phaseTwoContent } from "@/content/phase-two";
+import industriesImage from "@/pictures/bernd-dittrich-917tYrOQVDI-unsplash.jpg";
 
 export default function IndustriesPage() {
   const { locale } = useLanguage();
   const content = phaseTwoContent[locale].industries;
-  const labels = pageLabels[locale];
 
   return (
     <PageFrame eyebrow={content.eyebrow} intro={content.intro} title={content.title}>
@@ -29,9 +29,10 @@ export default function IndustriesPage() {
               ))}
             </ul>
           </div>
-          <ImagePlaceholder
+          <IndustrialImage
+            alt="Förderband mit Transportbehältern in einer Lebensmittelumgebung"
             className="min-h-[26rem] rounded-lg"
-            label={labels.imagePlaceholder}
+            src={industriesImage}
           />
         </div>
       </section>

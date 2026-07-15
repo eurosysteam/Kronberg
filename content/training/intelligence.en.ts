@@ -5,7 +5,6 @@ export const intelligenceEn: TrainingTaskContent = {
   label: "Training task",
   title: "Key problem areas in the sales team",
   intro: "AI bot prototype for day-to-day sales work",
-  source: "documents/spezifischeProbleme_ueberarbeitet.docx",
   breadcrumb: {
     training: "Training",
     current: "Sales team",

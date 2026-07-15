@@ -5,7 +5,6 @@ export const intelligenceDe: TrainingTaskContent = {
   label: "Trainingsaufgabe",
   title: "Zentrale Problemstellungen im Sales-Team",
   intro: "KI-Bot-Prototyp für den Sales-Alltag",
-  source: "documents/spezifischeProbleme_ueberarbeitet.docx",
   breadcrumb: {
     training: "Training",
     current: "Sales-Team",

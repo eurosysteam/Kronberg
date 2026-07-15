@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { FeatureCard } from "@/components/feature-card";
-import { ImagePlaceholder } from "@/components/image-placeholder";
+import { IndustrialImage } from "@/components/industrial-image";
 import { useLanguage } from "@/components/language-provider";
 import { PageFrame } from "@/components/page-frame";
 import { SectionHeader } from "@/components/section-header";
 import { pageLabels, phaseTwoContent } from "@/content/phase-two";
+import companyImage from "@/pictures/Gemini_Generated_Image_974omp974omp974o.png";
 
 export default function CompanyPage() {
   const { locale } = useLanguage();
@@ -23,9 +24,10 @@ export default function CompanyPage() {
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
-          <ImagePlaceholder
+          <IndustrialImage
+            alt="Moderner Kronberg Unternehmensstandort mit Produktions- und Logistikflächen"
             className="min-h-[28rem] rounded-lg"
-            label={labels.imagePlaceholder}
+            src={companyImage}
           />
         </div>
       </section>

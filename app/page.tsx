@@ -5,8 +5,9 @@ import { ArrowRight, Boxes, Factory, Wrench } from "lucide-react";
 import { ButtonLink } from "@/components/button-link";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { ImagePlaceholder } from "@/components/image-placeholder";
+import { IndustrialImage } from "@/components/industrial-image";
 import { useLanguage } from "@/components/language-provider";
+import heroImage from "@/pictures/hyundai-motor-group-h2rWePLKxvs-unsplash.jpg";
 
 const previewIcons = [Boxes, Factory, Wrench];
 
@@ -18,9 +19,11 @@ export default function Home() {
       <Header />
       <main>
         <section className="relative flex min-h-screen overflow-hidden bg-[var(--color-navy)] text-white">
-          <ImagePlaceholder
+          <IndustrialImage
+            alt="Automatisierte Fördertechnik in einer industriellen Anlage"
             className="absolute inset-0 min-h-full"
-            label={t.imagePlaceholder}
+            priority
+            src={heroImage}
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,29,73,.92),rgba(7,29,73,.72)_48%,rgba(7,29,73,.36))]" />
           <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center px-5 pb-16 pt-32 sm:px-8">

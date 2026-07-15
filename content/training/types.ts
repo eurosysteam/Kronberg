@@ -12,7 +12,6 @@ export type TrainingTaskContent = {
   label: string;
   title: string;
   intro: string;
-  source: string;
   breadcrumb: {
     training: string;
     current: string;
