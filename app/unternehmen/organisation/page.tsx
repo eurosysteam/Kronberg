@@ -1,0 +1,54 @@
+"use client";
+
+import { OrganizationCard } from "@/components/organization-card";
+import { PageFrame } from "@/components/page-frame";
+import { useLanguage } from "@/components/language-provider";
+import { phaseTwoContent } from "@/content/phase-two";
+
+export default function OrganizationPage() {
+  const { locale } = useLanguage();
+  const content = phaseTwoContent[locale].organization;
+
+  return (
+    <PageFrame eyebrow={content.eyebrow} intro={content.intro} title={content.title}>
+      <section className="bg-[var(--color-light)] px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl rounded-lg border border-[var(--color-line)] bg-white p-7 text-center shadow-[var(--shadow-soft)]">
+            <p className="text-sm font-bold uppercase tracking-normal text-[var(--color-cyan)]">
+              {content.ownerCircle.title}
+            </p>
+            <p className="mt-3 text-base leading-7 text-[var(--color-muted)]">
+              {content.ownerCircle.text}
+            </p>
+          </div>
+
+          <div className="mx-auto my-6 h-12 w-px bg-[var(--color-line)]" />
+
+          <div className="mx-auto max-w-4xl">
+            <OrganizationCard item={content.management} />
+          </div>
+
+          <div className="mx-auto my-6 h-12 w-px bg-[var(--color-line)]" />
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {content.departments.map((item) => (
+              <OrganizationCard item={item} key={item.title} />
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-lg border border-dashed border-[var(--color-cyan)] bg-white p-7 shadow-[var(--shadow-soft)]">
+            <p className="text-sm font-bold uppercase tracking-normal text-[var(--color-cyan)]">
+              {content.council.count}
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-[var(--color-navy)]">
+              {content.council.title}
+            </h2>
+            <p className="mt-3 text-base leading-7 text-[var(--color-muted)]">
+              {content.council.text}
+            </p>
+          </div>
+        </div>
+      </section>
+    </PageFrame>
+  );
+}
