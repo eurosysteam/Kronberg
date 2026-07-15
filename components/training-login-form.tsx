@@ -26,9 +26,9 @@ export function TrainingLoginForm({ labels }: { labels: TrainingLoginLabels }) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ password }),
-    });
+    }).catch(() => null);
 
-    if (!response.ok) {
+    if (!response?.ok) {
       setError(labels.error);
       setSubmitting(false);
       return;

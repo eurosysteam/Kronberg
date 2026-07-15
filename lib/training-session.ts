@@ -7,8 +7,23 @@ import type { TrainingArea } from "@/content/training/types";
 export const TRAINING_COOKIE = "kronberg_training_access";
 const validAreas: TrainingArea[] = ["leadership", "intelligence"];
 
+function normalizeSecretValue(value: string | undefined) {
+  const trimmed = value?.trim();
+
+  if (!trimmed) return "";
+
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
+    return trimmed.slice(1, -1).trim();
+  }
+
+  return trimmed;
+}
+
 function getSecret() {
-  const secret = process.env.SESSION_SECRET;
+  const secret = normalizeSecretValue(process.env.SESSION_SECRET);
 
   if (!secret || secret.length < 32) {
     throw new Error("SESSION_SECRET must be set to a sufficiently long value.");
@@ -60,14 +75,15 @@ export function getCookieOptions() {
 }
 
 export function resolvePasswordArea(password: string): TrainingArea | null {
-  const leadershipPassword = process.env.TRAINING_PASSWORD_LEADERSHIP;
-  const intelligencePassword = process.env.TRAINING_PASSWORD_INTELLIGENCE;
+  const submittedPassword = normalizeSecretValue(password);
+  const leadershipPassword = normalizeSecretValue(process.env.TRAINING_PASSWORD_LEADERSHIP);
+  const intelligencePassword = normalizeSecretValue(process.env.TRAINING_PASSWORD_INTELLIGENCE);
 
-  if (leadershipPassword && password === leadershipPassword) {
+  if (leadershipPassword && submittedPassword === leadershipPassword) {
     return "leadership";
   }
 
-  if (intelligencePassword && password === intelligencePassword) {
+  if (intelligencePassword && submittedPassword === intelligencePassword) {
     return "intelligence";
   }
 
