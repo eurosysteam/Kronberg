@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { IndustrialImage } from "@/components/industrial-image";
 import { useLanguage } from "@/components/language-provider";
-import heroImage from "@/pictures/hyundai-motor-group-h2rWePLKxvs-unsplash.jpg";
+import heroImage from "@/pictures/Startseite.png";
 
 const previewIcons = [Boxes, Factory, Wrench];
 
@@ -47,17 +47,25 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b border-[var(--color-line)] bg-white">
-          <div className="mx-auto grid max-w-7xl gap-px bg-[var(--color-line)] px-5 sm:px-8 lg:grid-cols-3">
-            {t.stats.map((stat) => (
-              <div className="bg-white py-8 lg:px-8" key={stat}>
-                <p className="text-2xl font-bold text-[var(--color-navy)]">{stat}</p>
-              </div>
-            ))}
+        <section className="relative z-20 bg-white px-5 sm:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="-mt-14 grid overflow-hidden rounded-lg border border-white/70 bg-white shadow-[0_24px_70px_rgb(7_29_73_/_16%)] md:grid-cols-3">
+              {t.stats.map((stat) => (
+                <div
+                  className="relative border-b border-[var(--color-line)] px-6 py-7 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0 lg:px-8"
+                  key={stat}
+                >
+                  <div className="absolute left-0 top-0 h-1 w-full bg-[linear-gradient(90deg,var(--color-cyan),rgba(0,166,178,0))]" />
+                  <p className="text-2xl font-bold leading-tight text-[var(--color-navy)] lg:text-3xl">
+                    {stat}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        <section className="bg-[var(--color-light)] px-5 py-20 sm:px-8">
+        <section className="bg-[var(--color-light)] px-5 py-20 pt-24 sm:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-normal text-[var(--color-cyan)]">

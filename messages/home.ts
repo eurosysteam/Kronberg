@@ -24,7 +24,7 @@ export const homeMessages = {
     stats: [
       "ca. 2.500 Mitarbeitende",
       "Ursprung 1968",
-      "5+ europäische Service- und Standortpräsenzen",
+      "5+ europäische Standorte",
     ],
     previews: {
       eyebrow: "Kompetenzfelder",
