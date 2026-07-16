@@ -13,6 +13,7 @@ import trainingImage from "@/pictures/pexels-gustavo-fring-4872040.jpg";
 import monitoringImage from "@/pictures/pexels-hyundaimotorgroup-19317897.jpg";
 import maintenanceImage from "@/pictures/pexels-marianna-zuzanna-498248397-16442680.jpg";
 import commissioningImage from "@/pictures/pexels-mikael-blomkvist-8961146.jpg";
+import serviceHeroImage from "@/pictures/pexels-sergey-sergeev-2153675005-32845692.jpg";
 import serviceContractImage from "@/pictures/ServiceVerträge.jpg";
 import type { StaticImageData } from "next/image";
 
@@ -105,7 +106,7 @@ export default function ServicePage() {
           locale === "de"
             ? "Servicetechniker im blauen Overall mit Tablet"
             : "Service technician in blue overalls with a tablet",
-        src: serviceContractImage,
+        src: serviceHeroImage,
       }}
       intro={content.intro}
       title={content.title}
