@@ -35,7 +35,7 @@ export function PageFrame({
           {heroImage ? (
             <IndustrialImage
               alt={heroImage.alt}
-              className="absolute inset-0 min-h-full opacity-50"
+              className="absolute inset-0 min-h-full"
               priority
               src={heroImage.src}
             />
@@ -45,7 +45,7 @@ export function PageFrame({
               label={t.imagePlaceholder}
             />
           )}
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,29,73,.96),rgba(7,29,73,.8)_55%,rgba(7,29,73,.5))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,29,73,.86),rgba(7,29,73,.58)_55%,rgba(7,29,73,.24))]" />
           <div className="relative z-10 mx-auto max-w-7xl">
             <p className="text-sm font-bold uppercase tracking-normal text-[var(--color-cyan)]">
               {eyebrow}

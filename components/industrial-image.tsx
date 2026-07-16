@@ -15,8 +15,12 @@ export function IndustrialImage({
   priority = false,
   src,
 }: IndustrialImageProps) {
+  const hasPositionClass = /\b(absolute|fixed|relative|sticky)\b/.test(className);
+
   return (
-    <div className={`relative overflow-hidden bg-[var(--color-navy)] ${className}`}>
+    <div
+      className={`${hasPositionClass ? "" : "relative"} overflow-hidden bg-[var(--color-navy)] ${className}`}
+    >
       <Image
         alt={alt}
         className={`object-cover ${imageClassName}`}

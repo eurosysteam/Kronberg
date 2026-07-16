@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { IndustrialImage } from "@/components/industrial-image";
 import { useLanguage } from "@/components/language-provider";
-import heroImage from "@/pictures/Startseite.png";
+import heroImage from "@/pictures/Förderhalle.jpg";
 
 const previewIcons = [Boxes, Factory, Wrench];
 
@@ -25,7 +25,7 @@ export default function Home() {
             priority
             src={heroImage}
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,29,73,.92),rgba(7,29,73,.72)_48%,rgba(7,29,73,.36))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,29,73,.84),rgba(7,29,73,.56)_48%,rgba(7,29,73,.16))]" />
           <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center px-5 pb-16 pt-32 sm:px-8">
             <div className="max-w-4xl">
               <p className="mb-5 text-sm font-bold uppercase tracking-normal text-[var(--color-cyan)]">

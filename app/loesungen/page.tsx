@@ -5,7 +5,7 @@ import { PageFrame } from "@/components/page-frame";
 import { SectionHeader } from "@/components/section-header";
 import { useLanguage } from "@/components/language-provider";
 import { pageLabels, phaseTwoContent } from "@/content/phase-two";
-import conveyorImage from "@/pictures/alberto-rodriguez-qVpGF1mlaM8-unsplash.jpg";
+import conveyorImage from "@/pictures/Lösungen.jpg";
 import monitoringImage from "@/pictures/Gemini_Generated_Image_3gaojp3gaojp3gao.png";
 import hubStationImage from "@/pictures/hubstation.jpg";
 import controlImage from "@/pictures/pexels-freek-wolsink-508219-34194580.jpg";
