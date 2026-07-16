@@ -97,7 +97,18 @@ export default function SolutionsPage() {
   const labels = pageLabels[locale];
 
   return (
-    <PageFrame eyebrow={content.eyebrow} intro={content.intro} title={content.title}>
+    <PageFrame
+      eyebrow={content.eyebrow}
+      heroImage={{
+        alt:
+          locale === "de"
+            ? "Fördertechnik in einer industriellen Anlage"
+            : "Conveyor technology in an industrial system",
+        src: conveyorImage,
+      }}
+      intro={content.intro}
+      title={content.title}
+    >
       <section className="bg-white px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeader title={content.processTitle} />

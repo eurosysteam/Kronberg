@@ -157,9 +157,8 @@ export const phaseTwoContent = {
     },
     organization: {
       eyebrow: "Organisation",
-      title: "Bereiche ohne Personenprofile",
-      intro:
-        "Die Organisationsdarstellung zeigt ausschließlich Unternehmensbereiche und Größenordnungen. Öffentliche Personenprofile werden nicht dargestellt.",
+      title: "Organigramm",
+      intro: "",
       ownerCircle: {
         title: "Gesellschafterkreis",
         text: "Der Gesellschafterkreis steht oberhalb der Geschäftsführung.",
@@ -179,7 +178,6 @@ export const phaseTwoContent = {
           title: "Operations",
           count: "ca. 1.170 Mitarbeitende",
           text: "Bündelt Produktion, Montage, operative Supply Chain, Qualitäts- und Prozessmanagement sowie Werksleitungen.",
-          emphasis: true,
         },
         {
           title: "Engineering & Product Development",
@@ -223,7 +221,7 @@ export const phaseTwoContent = {
       title: "Module für integrierte Materialflüsse",
       intro:
         "Kronberg entwickelt, produziert, installiert und wartet Komponenten und Anlagen für innerbetriebliche Waren- und Materialflüsse.",
-      processTitle: "Vier-Schritte-Logik",
+      processTitle: "Experten für den ganzen Prozess",
       process: [
         {
           title: "Verstehen",
@@ -396,7 +394,7 @@ export const phaseTwoContent = {
           icon: Building2,
         },
         {
-          title: "Inbetriebnahmeunterstützung",
+          title: "Inbetriebnahme-\nunterstützung",
           text: "Begleitung bei Installation, Anlauf und Übergang in den Betrieb.",
           icon: Settings,
         },
@@ -494,9 +492,8 @@ export const phaseTwoContent = {
     },
     organization: {
       eyebrow: "Organization",
-      title: "Departments without public people profiles",
-      intro:
-        "The organizational view shows only company departments and approximate sizes. Public people profiles are not displayed.",
+      title: "Organizational Chart",
+      intro: "",
       ownerCircle: {
         title: "Shareholder circle",
         text: "The shareholder circle is positioned above the management board.",
@@ -516,7 +513,6 @@ export const phaseTwoContent = {
           title: "Operations",
           count: "approx. 1,170 employees",
           text: "Combines production, assembly, operational supply chain, quality and process management as well as plant management.",
-          emphasis: true,
         },
         {
           title: "Engineering & Product Development",
@@ -560,7 +556,7 @@ export const phaseTwoContent = {
       title: "Modules for integrated material flows",
       intro:
         "Kronberg develops, manufactures, installs and maintains components and systems for internal goods and material flows.",
-      processTitle: "Four-step logic",
+      processTitle: "Experts for the entire process",
       process: [
         {
           title: "Understand",

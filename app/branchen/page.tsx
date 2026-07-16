@@ -6,6 +6,7 @@ import { PageFrame } from "@/components/page-frame";
 import { SectionHeader } from "@/components/section-header";
 import { useLanguage } from "@/components/language-provider";
 import { phaseTwoContent } from "@/content/phase-two";
+import industriesHeroImage from "@/pictures/Branchen.jpg";
 import industriesImage from "@/pictures/bernd-dittrich-917tYrOQVDI-unsplash.jpg";
 
 export default function IndustriesPage() {
@@ -13,7 +14,18 @@ export default function IndustriesPage() {
   const content = phaseTwoContent[locale].industries;
 
   return (
-    <PageFrame eyebrow={content.eyebrow} intro={content.intro} title={content.title}>
+    <PageFrame
+      eyebrow={content.eyebrow}
+      heroImage={{
+        alt:
+          locale === "de"
+            ? "Logistikhalle mit Laderampen und Industrieumgebung"
+            : "Logistics hall with loading docks and industrial environment",
+        src: industriesHeroImage,
+      }}
+      intro={content.intro}
+      title={content.title}
+    >
       <section className="bg-white px-5 py-20 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <div>

@@ -4,13 +4,25 @@ import { OrganizationCard } from "@/components/organization-card";
 import { PageFrame } from "@/components/page-frame";
 import { useLanguage } from "@/components/language-provider";
 import { phaseTwoContent } from "@/content/phase-two";
+import headquartersImage from "@/pictures/Gemini_Generated_Image_974omp974omp974o.png";
 
 export default function OrganizationPage() {
   const { locale } = useLanguage();
   const content = phaseTwoContent[locale].organization;
 
   return (
-    <PageFrame eyebrow={content.eyebrow} intro={content.intro} title={content.title}>
+    <PageFrame
+      eyebrow={content.eyebrow}
+      heroImage={{
+        alt:
+          locale === "de"
+            ? "Kronberg Hauptsitz mit Verwaltungs- und Logistikgebäude"
+            : "Kronberg headquarters with administration and logistics building",
+        src: headquartersImage,
+      }}
+      intro={content.intro}
+      title={content.title}
+    >
       <section className="bg-[var(--color-light)] px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl rounded-lg border border-[var(--color-line)] bg-white p-7 text-center shadow-[var(--shadow-soft)]">

@@ -26,7 +26,7 @@ export function ModuleCard({ image, item, imageLabel }: ModuleCardProps) {
         <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded bg-[var(--color-light)] text-[var(--color-blue)]">
           <Icon aria-hidden="true" />
         </div>
-        <h3 className="text-2xl font-bold text-[var(--color-navy)]">
+        <h3 className="whitespace-pre-line text-2xl font-bold text-[var(--color-navy)]">
           {item.title}
         </h3>
         <p className="mt-4 text-base leading-7 text-[var(--color-muted)]">

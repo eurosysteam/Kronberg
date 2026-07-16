@@ -8,6 +8,7 @@ import { useLanguage } from "@/components/language-provider";
 import { PageFrame } from "@/components/page-frame";
 import { SectionHeader } from "@/components/section-header";
 import { pageLabels, phaseTwoContent } from "@/content/phase-two";
+import companyHeroImage from "@/pictures/Gemini_Generated_Image_3gaojp3gaojp3gao.png";
 import companyImage from "@/pictures/Gemini_Generated_Image_974omp974omp974o.png";
 
 export default function CompanyPage() {
@@ -16,7 +17,18 @@ export default function CompanyPage() {
   const labels = pageLabels[locale];
 
   return (
-    <PageFrame eyebrow={content.eyebrow} intro={content.intro} title={content.title}>
+    <PageFrame
+      eyebrow={content.eyebrow}
+      heroImage={{
+        alt:
+          locale === "de"
+            ? "Kronberg Fördertechnik mit Förderbändern und digitalem Monitoring"
+            : "Kronberg conveyor technology with conveyors and digital monitoring",
+        src: companyHeroImage,
+      }}
+      intro={content.intro}
+      title={content.title}
+    >
       <section className="bg-white px-5 py-20 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
           <div className="grid gap-6 text-lg leading-8 text-[var(--color-muted)]">
