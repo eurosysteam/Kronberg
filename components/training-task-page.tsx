@@ -70,14 +70,14 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
                     </h2>
                     {section.body?.map((paragraph) => (
                       <p className="mt-4 text-base leading-8 text-[var(--color-muted)]" key={paragraph}>
-                        {paragraph}
+                        <InlineText text={paragraph} />
                       </p>
                     ))}
                     {section.items ? (
                       <ul className="mt-4 grid gap-3 text-base leading-7 text-[var(--color-muted)]">
                         {section.items.map((item) => (
                           <li className="border-l-2 border-[var(--color-cyan)] pl-4" key={item}>
-                            {item}
+                            <InlineText text={item} />
                           </li>
                         ))}
                       </ul>
@@ -113,6 +113,24 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
         </section>
       </main>
       <Footer />
+    </>
+  );
+}
+
+function InlineText({ text }: { text: string }) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+
+  return (
+    <>
+      {parts.map((part, index) =>
+        part.startsWith("**") && part.endsWith("**") ? (
+          <strong className="font-bold text-[var(--color-navy)]" key={`${part}-${index}`}>
+            {part.slice(2, -2)}
+          </strong>
+        ) : (
+          <span key={`${part}-${index}`}>{part}</span>
+        ),
+      )}
     </>
   );
 }

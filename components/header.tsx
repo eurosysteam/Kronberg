@@ -78,6 +78,21 @@ export function Header() {
           >
             {navText.training}
           </Link>
+          <a
+            aria-label="eurosysteam"
+            className="inline-flex h-11 items-center transition opacity-95 hover:opacity-100"
+            href="https://www.eurosysteam.de/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Image
+              alt="eurosysteam"
+              className="h-11 w-auto"
+              height={48}
+              src="/brand/eurosysteamLogoNeu.jpg"
+              width={156}
+            />
+          </a>
         </div>
 
         <button
@@ -111,6 +126,21 @@ export function Header() {
             >
               {navText.training}
             </Link>
+            <a
+              aria-label="eurosysteam"
+              className="mt-3 inline-flex items-center justify-center"
+              href="https://www.eurosysteam.de/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                alt="eurosysteam"
+                className="h-11 w-auto"
+                height={48}
+                src="/brand/eurosysteamLogoNeu.jpg"
+                width={156}
+              />
+            </a>
           </nav>
           <div className="mt-5">
             <LanguageSwitcher compact />
