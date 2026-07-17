@@ -4,7 +4,7 @@ export const leadershipEn: TrainingTaskContent = {
   area: "leadership",
   label: "Training task",
   title: "Task: Leadership with AI",
-  intro: "AI bot prototypes for Sales, Marketing & Service",
+  intro: "AI bot prototypes for Sales, Marketing & Technical Service",
   breadcrumb: {
     training: "Training",
     current: "Leadership with AI",
@@ -13,7 +13,7 @@ export const leadershipEn: TrainingTaskContent = {
     {
       title: "Your role",
       body: [
-        "You take on the role of Sabine Vogel, Head of Sales, Marketing & Service at Kronberg Fördertechnik Gruppe. You are responsible for a large, customer-facing area that includes sales, key account management, marketing, service and after sales. In addition to revenue, customer relationships and market position, your responsibilities also include leadership, collaboration, competence development and realistic resource management.",
+        "You take on the role of Sabine Vogel, Head of Sales, Marketing & Technical Service at Kronberg Fördertechnik Gruppe. You are responsible for a large, customer-facing area with around 570 employees that includes DACH sales, international sales, key account management, marketing as well as technical service & after sales. In addition to revenue, customer relationships and market position, your responsibilities also include leadership, collaboration, competence development and realistic resource management.",
       ],
     },
     {
@@ -22,7 +22,7 @@ export const leadershipEn: TrainingTaskContent = {
     {
       title: "1. Conflict between two employees",
       body: [
-        "Initial situation: Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are working on a strategically important major customer. Oliver expects fast and flexible commitments so as not to endanger the customer relationship. Jana, by contrast, criticizes the fact that Sales has repeatedly held out the prospect of services and response times that Service can hardly meet with the available capacity. After a tense coordination meeting, the conflict has openly escalated by email. Both feel that the other side does not take them seriously. Initial team members are taking sides, and a joint customer appointment will take place in five days. Sabine Vogel must first hold one-to-one conversations and then a joint clarification meeting.",
+        "Initial situation: Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are working on a strategically important major customer. Oliver expects fast and flexible commitments so as not to endanger the customer relationship. Jana, by contrast, criticizes the fact that Sales has repeatedly held out the prospect of services and response times that Service can hardly meet with the available capacity. After a tense coordination meeting, the conflict has openly escalated by email. Both feel that the other side does not take them seriously. Initial team members are taking sides, and a joint customer appointment will take place in five days. Sabine Vogel must first hold one-to-one conversations and then a joint clarification meeting. The chatbot should support her in preparing, simulating and evaluating all three conversations.",
       ],
       callout: "Develop a chatbot to prepare and simulate the conversations.",
     },
@@ -43,8 +43,8 @@ export const leadershipEn: TrainingTaskContent = {
     {
       title: "Your task",
       body: [
-        "You take on the role of **Sabine Vogel, Head of Sales, Marketing & Service at Kronberg Fördertechnik Gruppe**.",
-        "You are responsible for a large, customer-facing area that includes sales, key account management, marketing, service and after sales. In addition to revenue, customer relationships and market position, your responsibilities also include leadership, collaboration, competence development and realistic resource management.",
+        "You take on the role of **Sabine Vogel, Head of Sales, Marketing & Technical Service at Kronberg Fördertechnik Gruppe**.",
+        "You are responsible for a large, customer-facing area with around 570 employees that includes DACH sales, international sales, key account management, marketing as well as technical service & after sales. In addition to revenue, customer relationships and market position, your responsibilities also include leadership, collaboration, competence development and realistic resource management.",
         "Choose **one of the three leadership challenges described**.",
         "Develop an AI bot prototype that **personally supports Sabine Vogel in working on this leadership task**.",
         "**Phase 1 – Design leadership support**",

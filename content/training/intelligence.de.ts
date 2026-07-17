@@ -13,8 +13,8 @@ export const intelligenceDe: TrainingTaskContent = {
     {
       title: "Ihre Rolle",
       body: [
-        "Sie übernehmen die Rolle eines Beraters aus dem Team Strategy & Transformation der Kronberg Fördertechnik Gruppe.",
-        "Sie unterstützen Sabine Vogel, Head of Sales, Marketing & Service, bei der Frage, wie KI sinnvoll im Arbeitsalltag eingesetzt werden kann. Im beschriebenen Lagebericht finden sich mehrere operative und strategische Herausforderungen.",
+        "Sie übernehmen die Rolle eines Beraters aus dem Bereich **Strategy & Corporate Development** der Kronberg Fördertechnik Gruppe.",
+        "Sie unterstützen **Sabine Vogel**, **Head of Sales, Marketing & Technischer Service**, bei der Frage, wie KI sinnvoll im Arbeitsalltag eingesetzt werden kann. Ihr Bereich umfasst Vertrieb DACH, International Sales, Key Account Management, Marketing sowie Technischen Service & After Sales. Im beschriebenen Lagebericht finden sich mehrere operative und strategische Herausforderungen.",
       ],
     },
     {
@@ -27,9 +27,9 @@ export const intelligenceDe: TrainingTaskContent = {
       ],
     },
     {
-      title: "2. Kulturelle Unterschiede bei internationalen Kunden",
+      title: "2. Argumentation gegenüber günstigeren Anbietern",
       body: [
-        "Bei internationalen Kunden unterscheiden sich Kommunikationsstile, Verhandlungslogiken, Erwartungen an Verbindlichkeit, Tempo, Direktheit und Beziehungspflege. Diese Unterschiede können zu Missverständnissen führen und erschweren die professionelle Vorbereitung von Kundengesprächen und Verhandlungen.",
+        "Kronberg steht häufig im Wettbewerb mit günstigeren Anbietern. Dabei reicht eine einheitliche Verkaufsargumentation nicht immer aus, weil Kunden Mehrwert, Risiko, Qualität und Zusammenarbeit unterschiedlich bewerten. Wird die Argumentation nicht an die Kultur, Denkweise und Entscheidungslogik des jeweiligen Gegenübers angepasst, können die höheren Preise von Kronberg schwer nachvollziehbar wirken.",
       ],
     },
     {

@@ -13,8 +13,8 @@ export const intelligenceEn: TrainingTaskContent = {
     {
       title: "Your role",
       body: [
-        "You take on the role of a consultant from the Strategy & Transformation team at Kronberg Fördertechnik Gruppe.",
-        "You support Sabine Vogel, Head of Sales, Marketing & Service, in exploring how AI can be used meaningfully in everyday work. The situation report describes several operational and strategic challenges.",
+        "You take on the role of a consultant from the **Strategy & Corporate Development** area at Kronberg Fördertechnik Gruppe.",
+        "You support **Sabine Vogel**, **Head of Sales, Marketing & Technical Service**, in exploring how AI can be used meaningfully in everyday work. Her area includes DACH sales, international sales, key account management, marketing as well as technical service & after sales. The situation report describes several operational and strategic challenges.",
       ],
     },
     {
@@ -27,9 +27,9 @@ export const intelligenceEn: TrainingTaskContent = {
       ],
     },
     {
-      title: "2. Cultural differences with international customers",
+      title: "2. Argumentation against lower-cost providers",
       body: [
-        "With international customers, communication styles, negotiation logic, expectations regarding commitment, pace, directness and relationship management differ. These differences can lead to misunderstandings and make professional preparation for customer conversations and negotiations more difficult.",
+        "Kronberg frequently competes with lower-cost providers. A uniform sales argument is not always sufficient because customers evaluate added value, risk, quality and collaboration differently. If the argumentation is not adapted to the culture, mindset and decision logic of the respective counterpart, Kronberg's higher prices can be difficult to understand.",
       ],
     },
     {

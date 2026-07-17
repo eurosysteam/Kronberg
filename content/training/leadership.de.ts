@@ -4,7 +4,7 @@ export const leadershipDe: TrainingTaskContent = {
   area: "leadership",
   label: "Trainingsaufgabe",
   title: "Aufgabenstellung: Führung mit KI",
-  intro: "KI-Bot-Prototypen für Sales, Marketing & Service",
+  intro: "KI-Bot-Prototypen für Sales, Marketing & Technischer Service",
   breadcrumb: {
     training: "Training",
     current: "Führung mit KI",
@@ -13,7 +13,7 @@ export const leadershipDe: TrainingTaskContent = {
     {
       title: "Ihre Rolle",
       body: [
-        "Sie übernehmen die Rolle von Sabine Vogel, Head of Sales, Marketing & Service bei der Kronberg Fördertechnik Gruppe. Sie verantworten einen großen, kundennahen Bereich, der Vertrieb, Key Account Management, Marketing, Service und After Sales umfasst. Neben Umsatz, Kundenbeziehungen und Marktposition gehören auch Führung, Zusammenarbeit, Kompetenzentwicklung und eine realistische Ressourcensteuerung zu Ihren Aufgaben.",
+        "Sie übernehmen die Rolle von Sabine Vogel, Head of Sales, Marketing & Technischer Service bei der Kronberg Fördertechnik Gruppe. Sie verantworten einen großen, kundennahen Bereich mit rund 570 Mitarbeitenden, der Vertrieb DACH, International Sales, Key Account Management, Marketing sowie Technischen Service & After Sales umfasst. Neben Umsatz, Kundenbeziehungen und Marktposition gehören auch Führung, Zusammenarbeit, Kompetenzentwicklung und eine realistische Ressourcensteuerung zu Ihren Aufgaben.",
       ],
     },
     {
@@ -22,7 +22,7 @@ export const leadershipDe: TrainingTaskContent = {
     {
       title: "1. Konflikt zwischen zwei Mitarbeitenden",
       body: [
-        "Ausgangslage: Oliver Brandt, Leiter Key Account Management, und Jana Weber, Leiterin Service DACH, arbeiten an einem strategisch wichtigen Großkunden. Oliver erwartet schnelle und flexible Zusagen, um die Kundenbeziehung nicht zu gefährden. Jana kritisiert hingegen, dass der Vertrieb wiederholt Leistungen und Reaktionszeiten in Aussicht stellt, die der Service mit den vorhandenen Kapazitäten kaum einhalten kann. Nach einer angespannten Abstimmung ist der Konflikt per E-Mail offen eskaliert. Beide fühlen sich von der jeweils anderen Seite nicht ernst genommen. Erste Teammitglieder beziehen Position, und in fünf Tagen findet ein gemeinsamer Kundentermin statt. Sabine Vogel muss zunächst Einzelgespräche und anschließend ein gemeinsames Klärungsgespräch führen.",
+        "Ausgangslage: Oliver Brandt, Leiter Key Account Management, und Jana Weber, Leiterin Service DACH, arbeiten an einem strategisch wichtigen Großkunden. Oliver erwartet schnelle und flexible Zusagen, um die Kundenbeziehung nicht zu gefährden. Jana kritisiert hingegen, dass der Vertrieb wiederholt Leistungen und Reaktionszeiten in Aussicht stellt, die der Service mit den vorhandenen Kapazitäten kaum einhalten kann. Nach einer angespannten Abstimmung ist der Konflikt per E-Mail offen eskaliert. Beide fühlen sich von der jeweils anderen Seite nicht ernst genommen. Erste Teammitglieder beziehen Position, und in fünf Tagen findet ein gemeinsamer Kundentermin statt. Sabine Vogel muss zunächst Einzelgespräche und anschließend ein gemeinsames Klärungsgespräch führen. Der Chatbot soll sie bei der Vorbereitung, Simulation und Auswertung aller drei Gespräche unterstützen.",
       ],
       callout: "Entwickeln Sie einen Chatbot zur Vorbereitung und Simulation der Gespräche.",
     },
@@ -43,8 +43,8 @@ export const leadershipDe: TrainingTaskContent = {
     {
       title: "Ihre Aufgabe",
       body: [
-        "Sie übernehmen die Rolle von **Sabine Vogel, Head of Sales, Marketing & Service bei der Kronberg Fördertechnik Gruppe**.",
-        "Sie verantworten einen großen, kundennahen Bereich, der Vertrieb, Key Account Management, Marketing, Service und After Sales umfasst. Neben Umsatz, Kundenbeziehungen und Marktposition gehören auch Führung, Zusammenarbeit, Kompetenzentwicklung und eine realistische Ressourcensteuerung zu Ihren Aufgaben.",
+        "Sie übernehmen die Rolle von **Sabine Vogel, Head of Sales, Marketing & Technischer Service bei der Kronberg Fördertechnik Gruppe**.",
+        "Sie verantworten einen großen, kundennahen Bereich mit rund 570 Mitarbeitenden, der Vertrieb DACH, International Sales, Key Account Management, Marketing sowie Technischen Service & After Sales umfasst. Neben Umsatz, Kundenbeziehungen und Marktposition gehören auch Führung, Zusammenarbeit, Kompetenzentwicklung und eine realistische Ressourcensteuerung zu Ihren Aufgaben.",
         "Wählen Sie **eine der drei beschriebenen Führungsherausforderungen**.",
         "Entwickeln Sie einen KI-Bot-Prototypen, der **Sabine Vogel persönlich bei der Bearbeitung dieser Führungsaufgabe unterstützt**.",
         "**Phase 1 – Führungsunterstützung konzipieren**",

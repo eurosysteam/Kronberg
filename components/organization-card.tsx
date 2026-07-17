@@ -34,6 +34,25 @@ export function OrganizationCard({ item }: OrganizationCardProps) {
       >
         {item.text}
       </p>
+      {item.items ? (
+        <ul
+          className={`mt-5 grid gap-2 text-sm leading-6 ${
+            item.emphasis ? "text-white/78" : "text-[var(--color-muted)]"
+          }`}
+        >
+          {item.items.map((detail) => (
+            <li className="flex gap-2" key={detail}>
+              <span
+                aria-hidden="true"
+                className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${
+                  item.emphasis ? "bg-[var(--color-cyan)]" : "bg-[var(--color-blue)]"
+                }`}
+              />
+              <span>{detail}</span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </article>
   );
 }

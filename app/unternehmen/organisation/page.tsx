@@ -42,22 +42,15 @@ export default function OrganizationPage() {
 
           <div className="mx-auto my-6 h-12 w-px bg-[var(--color-line)]" />
 
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 lg:grid-cols-4">
             {content.departments.map((item) => (
               <OrganizationCard item={item} key={item.title} />
             ))}
           </div>
 
-          <div className="mt-10 rounded-lg border border-dashed border-[var(--color-cyan)] bg-white p-7 shadow-[var(--shadow-soft)]">
-            <p className="text-sm font-bold uppercase tracking-normal text-[var(--color-cyan)]">
-              {content.council.count}
-            </p>
-            <h2 className="mt-2 text-2xl font-bold text-[var(--color-navy)]">
-              {content.council.title}
-            </h2>
-            <p className="mt-3 text-base leading-7 text-[var(--color-muted)]">
-              {content.council.text}
-            </p>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <OrganizationCard item={content.council} />
+            <OrganizationCard item={content.externalStakeholders} />
           </div>
         </div>
       </section>
