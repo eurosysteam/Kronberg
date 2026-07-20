@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "Kronberg Fordertechnik company website demo",
+  "description": "Kronberg Fördertechnik company website demo",
   "private": true,
   "scripts": {
     "dev": "next dev",

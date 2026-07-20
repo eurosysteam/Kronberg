@@ -72,7 +72,7 @@ export const intelligenceDe: TrainingTaskContent = {
   ],
   support: {
     title: "Unterstützung",
-    text: "Der KI-Berater der Kronberg Gruppe kann Sie mit Informationen über das Unternehmen und durch themenspezifische Beratung unterstützen.",
+    text: "Der KI-Berater der Kronberg Fördertechnik Gruppe kann Sie mit Informationen über das Unternehmen und durch themenspezifische Beratung unterstützen.",
     linkLabel: "Kronberg KI öffnen",
     href: "https://chatgpt.com/g/g-6a4b982c1e7481919fa43865a21cf944-berater-kronberg",
   },

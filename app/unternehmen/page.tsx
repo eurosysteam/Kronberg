@@ -37,7 +37,7 @@ export default function CompanyPage() {
             ))}
           </div>
           <IndustrialImage
-            alt="Moderner Kronberg Unternehmensstandort mit Produktions- und Logistikflächen"
+            alt="Moderner Kronberg-Unternehmensstandort mit Produktions- und Logistikflächen"
             className="min-h-[28rem] rounded-lg"
             src={companyImage}
           />

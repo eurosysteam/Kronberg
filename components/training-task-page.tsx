@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -68,11 +68,7 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
                     <h2 className="text-2xl font-bold text-[var(--color-navy)]">
                       {section.title}
                     </h2>
-                    {section.body?.map((paragraph) => (
-                      <p className="mt-4 text-base leading-8 text-[var(--color-muted)]" key={paragraph}>
-                        <InlineText text={paragraph} />
-                      </p>
-                    ))}
+                    {section.body ? <TrainingBody paragraphs={section.body} /> : null}
                     {section.items ? (
                       <ul className="mt-4 grid gap-3 text-base leading-7 text-[var(--color-muted)]">
                         {section.items.map((item) => (
@@ -114,6 +110,64 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
       </main>
       <Footer />
     </>
+  );
+}
+
+type BodyBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "phase"; title: string; paragraphs: string[] };
+
+function TrainingBody({ paragraphs }: { paragraphs: string[] }) {
+  const blocks: BodyBlock[] = [];
+  let currentPhase: Extract<BodyBlock, { type: "phase" }> | null = null;
+
+  for (const paragraph of paragraphs) {
+    const isPhaseTitle = /^\*\*Phase\s+\d+/i.test(paragraph);
+    const isClosingTitle = /^\*\*(Abschluss|Conclusion)\b/i.test(paragraph);
+
+    if (isPhaseTitle) {
+      currentPhase = { type: "phase", title: paragraph, paragraphs: [] };
+      blocks.push(currentPhase);
+    } else if (currentPhase && !isClosingTitle) {
+      currentPhase.paragraphs.push(paragraph);
+    } else {
+      currentPhase = null;
+      blocks.push({ type: "paragraph", text: paragraph });
+    }
+  }
+
+  return (
+    <div className="mt-4 grid gap-4">
+      {blocks.map((block, index) =>
+        block.type === "phase" ? (
+          <details
+            className="group block w-full rounded-lg border border-[var(--color-line)] bg-[var(--color-light)] text-left open:border-[var(--color-cyan)]"
+            key={`${block.title}-${index}`}
+          >
+            <summary className="flex w-full cursor-pointer list-none items-center gap-4 px-5 py-4 text-left font-bold text-[var(--color-navy)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-cyan)] [&::-webkit-details-marker]:hidden">
+              <span className="min-w-0 flex-1 text-left">
+                <InlineText text={block.title} />
+              </span>
+              <ChevronDown
+                aria-hidden="true"
+                className="h-5 w-5 shrink-0 text-[var(--color-cyan)] transition-transform group-open:rotate-180 motion-reduce:transition-none"
+              />
+            </summary>
+            <div className="border-t border-[var(--color-line)] px-5 pb-5">
+              {block.paragraphs.map((paragraph) => (
+                <p className="mt-4 text-base leading-8 text-[var(--color-muted)]" key={paragraph}>
+                  <InlineText text={paragraph} />
+                </p>
+              ))}
+            </div>
+          </details>
+        ) : (
+          <p className="text-base leading-8 text-[var(--color-muted)]" key={`${block.text}-${index}`}>
+            <InlineText text={block.text} />
+          </p>
+        ),
+      )}
+    </div>
   );
 }
 

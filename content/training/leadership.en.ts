@@ -22,14 +22,14 @@ export const leadershipEn: TrainingTaskContent = {
     {
       title: "1. Conflict between two employees",
       body: [
-        "Initial situation: Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are working on a strategically important major customer. Oliver expects fast and flexible commitments so as not to endanger the customer relationship. Jana, by contrast, criticizes the fact that Sales has repeatedly held out the prospect of services and response times that Service can hardly meet with the available capacity. After a tense coordination meeting, the conflict has openly escalated by email. Both feel that the other side does not take them seriously. Initial team members are taking sides, and a joint customer appointment will take place in five days. Sabine Vogel must first hold one-to-one conversations and then a joint clarification meeting. The chatbot should support her in preparing, simulating and evaluating all three conversations.",
+        "Initial situation: Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are working with a strategically important major customer. Oliver expects fast and flexible commitments so as not to jeopardize the customer relationship. Jana, by contrast, criticizes the fact that Sales has repeatedly proposed services and response times that Service can hardly meet with the available capacity. After a tense coordination meeting, the conflict openly escalated by email. Both feel that the other side does not take them seriously. Some team members are taking sides, and a joint customer meeting will take place in five days. Sabine Vogel must first hold one-to-one conversations and then a joint clarification meeting. The chatbot should support her in preparing, simulating and evaluating all three conversations.",
       ],
       callout: "Develop a chatbot to prepare and simulate the conversations.",
     },
     {
       title: "2. AI strategy and enablement of the department",
       body: [
-        "Initial situation: In Sales, Marketing & Service, AI is already being used selectively, for example for drafting texts, preparing conversations, summaries or research. However, use is inconsistent: some employees experiment intensively, while others are skeptical or uncertain. Shared priorities, clear rules for handling customer and company data, quality standards, responsibilities and a coordinated learning offering are missing. Sabine Vogel is therefore expected to develop an AI strategy for her entire department and at the same time ensure that different employee groups build the required skills.",
+        "Initial situation: In Sales, Marketing & Service, AI is already being used selectively, for example for drafting texts, preparing conversations, creating summaries or conducting research. However, its use is inconsistent: some employees experiment intensively, while others are skeptical or uncertain. Shared priorities, clear rules for handling customer and company data, quality standards, responsibilities and a coordinated learning program are missing. Sabine Vogel is therefore expected to develop an AI strategy for her entire department while ensuring that different employee groups build the required skills.",
       ],
       callout: "Develop an AI strategy and learning advisor.",
     },
@@ -55,7 +55,7 @@ export const leadershipEn: TrainingTaskContent = {
         "**How should Sabine Vogel work with the bot?** Sketch the process from entry point through follow-up questions and analysis to a concrete recommendation for action or conversation preparation.",
         "**Result:** A clear application scenario from Sabine Vogel's perspective.",
         "**Phase 2 – Develop the bot**",
-        "Review and concretize the idea with AI.",
+        "Review and refine the idea with AI.",
         "Create a prompt with role, tasks, process and boundaries.",
         "**Phase 3 – Test and improve**",
         "Compile a suitable knowledge base.",

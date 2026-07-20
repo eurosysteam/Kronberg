@@ -47,10 +47,10 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <Link aria-label="Kronberg home" className="flex items-center" href="/">
+        <Link aria-label="Kronberg home" className="flex shrink-0 items-center" href="/">
           <Image
             alt="Kronberg"
-            className="h-12 w-auto"
+            className="h-10 w-auto sm:h-12"
             height={120}
             priority
             src="/brand/kronberg-logo.png"
@@ -95,15 +95,32 @@ export function Header() {
           </a>
         </div>
 
-        <button
-          aria-expanded={open}
-          aria-label={open ? navText.close : navText.menu}
-          className="inline-flex h-11 w-11 items-center justify-center rounded border border-current/25 lg:hidden"
-          onClick={() => setOpen((value) => !value)}
-          type="button"
-        >
-          {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
-        </button>
+        <div className="flex items-center gap-3 sm:gap-4 lg:hidden">
+          <a
+            aria-label="eurosysteam"
+            className="inline-flex shrink-0 items-center opacity-95 transition hover:opacity-100"
+            href="https://www.eurosysteam.de/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Image
+              alt="eurosysteam"
+              className="h-8 w-auto sm:h-10"
+              height={48}
+              src="/brand/eurosysteamLogoNeu.jpg"
+              width={156}
+            />
+          </a>
+          <button
+            aria-expanded={open}
+            aria-label={open ? navText.close : navText.menu}
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded border border-current/25"
+            onClick={() => setOpen((value) => !value)}
+            type="button"
+          >
+            {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+          </button>
+        </div>
       </div>
 
       {open ? (
@@ -126,21 +143,6 @@ export function Header() {
             >
               {navText.training}
             </Link>
-            <a
-              aria-label="eurosysteam"
-              className="mt-3 inline-flex items-center justify-center"
-              href="https://www.eurosysteam.de/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                alt="eurosysteam"
-                className="h-11 w-auto"
-                height={48}
-                src="/brand/eurosysteamLogoNeu.jpg"
-                width={156}
-              />
-            </a>
           </nav>
           <div className="mt-5">
             <LanguageSwitcher compact />

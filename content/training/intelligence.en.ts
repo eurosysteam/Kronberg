@@ -29,13 +29,13 @@ export const intelligenceEn: TrainingTaskContent = {
     {
       title: "2. Argumentation against lower-cost providers",
       body: [
-        "Kronberg frequently competes with lower-cost providers. A uniform sales argument is not always sufficient because customers evaluate added value, risk, quality and collaboration differently. If the argumentation is not adapted to the culture, mindset and decision logic of the respective counterpart, Kronberg's higher prices can be difficult to understand.",
+        "Kronberg frequently competes with lower-cost providers. A uniform sales pitch is not always sufficient because customers evaluate added value, risk, quality and collaboration differently. If the reasoning is not adapted to the culture, mindset and decision-making logic of the respective counterpart, Kronberg's higher prices can be difficult to understand.",
       ],
     },
     {
       title: "3. Challenges in onboarding new sales employees",
       body: [
-        "New colleagues have to familiarize themselves at the same time with products, industries, basic technical terminology, offer logic, internal processes and important points of contact. Since experienced employees have little time for structured knowledge transfer, competence development often takes longer than desired.",
+        "New colleagues must familiarize themselves simultaneously with products, industries, basic technical terminology, quotation logic, internal processes and important points of contact. Since experienced employees have little time for structured knowledge transfer, competence development often takes longer than desired.",
       ],
     },
     {

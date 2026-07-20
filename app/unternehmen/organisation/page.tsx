@@ -16,7 +16,7 @@ export default function OrganizationPage() {
       heroImage={{
         alt:
           locale === "de"
-            ? "Kronberg Hauptsitz mit Verwaltungs- und Logistikgebäude"
+            ? "Kronberg-Hauptsitz mit Verwaltungs- und Logistikgebäude"
             : "Kronberg headquarters with administration and logistics building",
         src: headquartersImage,
       }}

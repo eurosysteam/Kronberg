@@ -121,7 +121,7 @@ export const phaseThreeContent = {
       eyebrow: "Kontakt",
       title: "Kontaktformular",
       intro:
-        "Dieses Formular simuliert die Übermittlung serverseitig als Demo. Es versendet keine E-Mail, speichert keine Daten dauerhaft und überträgt keine Daten an externe Dienste.",
+        "Dieses Formular simuliert zu Demonstrationszwecken eine serverseitige Übermittlung. Es versendet keine E-Mail, speichert keine Daten dauerhaft und überträgt keine Daten an externe Dienste.",
       fields: {
         firstName: "Vorname",
         lastName: "Nachname",
@@ -190,7 +190,7 @@ export const phaseThreeContent = {
         {
           title: "Development Engineer Conveyor Technology",
           department: "Engineering & Product Development",
-          location: "Main site in Southern Germany",
+          location: "Main site in southern Germany",
           employment: "Full-time",
           level: "Experienced professional",
           text: "Development and design of components for robust conveyor, sorting and automation solutions.",
@@ -199,7 +199,7 @@ export const phaseThreeContent = {
         {
           title: "Mechatronics Technician Assembly",
           department: "Production & Assembly",
-          location: "Production plant Czechia",
+          location: "Production plant in Czechia",
           employment: "Full-time",
           level: "Skilled professional",
           text: "Assembly and preparation of system components for internal material flows.",
@@ -211,22 +211,22 @@ export const phaseThreeContent = {
           location: "Hybrid at the main site",
           employment: "Full-time",
           level: "Experienced professional",
-          text: "Support material availability for customer orders, production and assembly.",
+          text: "Support the availability of materials for customer orders, production and assembly.",
           tags: ["Purchasing", "Supply chain", "Coordination"],
         },
         {
           title: "Quality Engineer",
           department: "Quality & Process Management",
-          location: "Main site in Southern Germany",
+          location: "Main site in southern Germany",
           employment: "Full-time",
           level: "Experienced professional",
-          text: "Support quality and process topics around technical system solutions.",
+          text: "Support quality and process topics related to technical system solutions.",
           tags: ["Quality", "Processes", "Analysis"],
         },
         {
           title: "Sales Engineer",
           department: "Sales",
-          location: "Service Switzerland",
+          location: "Service location in Switzerland",
           employment: "Full-time",
           level: "Experienced professional",
           text: "Technical clarification of customer requirements for conveyor, sorting and automation solutions.",
@@ -253,7 +253,7 @@ export const phaseThreeContent = {
         {
           title: "Data Analyst",
           department: "IT & Digital Solutions",
-          location: "Service Netherlands",
+          location: "Service location in the Netherlands",
           employment: "Full-time",
           level: "Experienced professional",
           text: "Analyze digital system information to improve transparency during operation.",
@@ -262,7 +262,7 @@ export const phaseThreeContent = {
         {
           title: "Controller",
           department: "Finance & Administration",
-          location: "Main site in Southern Germany",
+          location: "Main site in southern Germany",
           employment: "Full-time",
           level: "Experienced professional",
           text: "Support financial analysis for departments, projects and investment decisions.",
@@ -271,7 +271,7 @@ export const phaseThreeContent = {
         {
           title: "Transformation Project Manager",
           department: "Strategy & Transformation",
-          location: "Service France",
+          location: "Service location in France",
           employment: "Full-time",
           level: "Experienced professional",
           text: "Structure and support cross-functional change and implementation projects.",
@@ -331,7 +331,7 @@ export const phaseThreeContent = {
         "The public website uses no analytics or tracking services and loads no external form services.",
       items: [
         "The contact form simulates server-side processing and discards entered data afterwards.",
-        "For a real publication, privacy information must be added and reviewed according to actual operation.",
+        "Before a real publication, privacy information must be added and reviewed according to the actual operation of the website.",
       ],
     },
   },
