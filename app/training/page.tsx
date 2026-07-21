@@ -4,7 +4,7 @@ import { PageFrame } from "@/components/page-frame";
 import { TrainingLoginForm } from "@/components/training-login-form";
 import { useLanguage } from "@/components/language-provider";
 import { trainingLoginContent } from "@/content/training/login";
-import trainingImage from "@/pictures/Training.jpg";
+import trainingImage from "@/pictures/Teams-Background_01.png";
 
 export default function TrainingPage() {
   const { locale } = useLanguage();
@@ -16,8 +16,8 @@ export default function TrainingPage() {
       heroImage={{
         alt:
           locale === "de"
-            ? "Trainingsmotiv für den geschützten Bereich"
-            : "Training motif for the protected area",
+            ? "eurosysteam-Hintergrundmotiv für den geschützten Trainingsbereich"
+            : "eurosysteam background motif for the protected training area",
         src: trainingImage,
       }}
       intro={content.intro}
