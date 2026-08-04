@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown, Download, ExternalLink } from "lucide-react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -70,9 +70,9 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
                     </h2>
                     {section.body ? <TrainingBody paragraphs={section.body} /> : null}
                     {section.items ? (
-                      <ul className="mt-4 grid gap-3 text-base leading-7 text-[var(--color-muted)]">
+                      <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-7 text-[var(--color-muted)] marker:text-[var(--color-cyan)]">
                         {section.items.map((item) => (
-                          <li className="border-l-2 border-[var(--color-cyan)] pl-4" key={item}>
+                          <li className="pl-1" key={item}>
                             <InlineText text={item} />
                           </li>
                         ))}
@@ -90,15 +90,28 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
               <section className="mt-12 rounded-lg bg-[var(--color-navy)] p-6 text-white">
                 <h2 className="text-2xl font-bold">{content.support.title}</h2>
                 <p className="mt-4 text-base leading-7 text-white/76">{content.support.text}</p>
-                <a
-                  className="mt-6 inline-flex items-center gap-2 rounded bg-[var(--color-cyan)] px-5 py-3 text-sm font-bold uppercase tracking-normal text-white transition hover:bg-[#008f99]"
-                  href={content.support.href}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  {content.support.linkLabel}
-                  <ExternalLink aria-hidden="true" className="h-4 w-4" />
-                </a>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a
+                    className="inline-flex items-center gap-2 rounded bg-[var(--color-cyan)] px-5 py-3 text-sm font-bold uppercase tracking-normal text-white transition hover:bg-[#008f99]"
+                    href={content.support.href}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {content.support.linkLabel}
+                    <ExternalLink aria-hidden="true" className="h-4 w-4" />
+                  </a>
+                  {content.support.downloads?.map((download) => (
+                    <a
+                      className="inline-flex items-center gap-2 rounded border border-white/45 px-5 py-3 text-sm font-bold text-white transition hover:border-[var(--color-cyan)] hover:bg-white/10"
+                      download
+                      href={download.href}
+                      key={download.href}
+                    >
+                      <Download aria-hidden="true" className="h-4 w-4 text-[var(--color-cyan)]" />
+                      {download.label}
+                    </a>
+                  ))}
+                </div>
               </section>
 
               <div className="mt-8">

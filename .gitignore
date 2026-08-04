@@ -13,6 +13,10 @@ pnpm-debug.log*
 *.log
 *.tmp
 *.temp
+*.bak
+*_probe.docx
+.pdfbuild/
+public/downloads/_source_*.docx
 .DS_Store
 Thumbs.db
 *.tsbuildinfo

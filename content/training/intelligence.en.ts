@@ -75,6 +75,16 @@ export const intelligenceEn: TrainingTaskContent = {
     text: "The AI advisor of the Kronberg Group can support you with information about the company and topic-specific advice.",
     linkLabel: "Open Kronberg AI",
     href: "https://chatgpt.com/g/g-6a4b982c1e7481919fa43865a21cf944-berater-kronberg",
+    downloads: [
+      {
+        label: "General knowledge base (PDF)",
+        href: "/downloads/Kronberg_Wissensbasis_Allgemein.pdf",
+      },
+      {
+        label: "Specialist tasks knowledge base (PDF)",
+        href: "/downloads/Kronberg_Wissensbasis_Fachaufgaben.pdf",
+      },
+    ],
   },
   reset: "Log out",
 };

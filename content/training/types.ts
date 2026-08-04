@@ -22,6 +22,10 @@ export type TrainingTaskContent = {
     text: string;
     linkLabel: string;
     href: string;
+    downloads?: Array<{
+      label: string;
+      href: string;
+    }>;
   };
   reset: string;
 };
