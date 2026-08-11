@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/components/language-provider";
+import { withBasePath } from "@/lib/base-path";
 
 const footerLinks = [
   { href: "/", key: "home" },
@@ -24,7 +25,7 @@ export function Footer() {
             alt="Kronberg"
             className="h-14 w-auto"
             height={120}
-            src="/brand/kronberg-logo.png"
+            src={withBasePath("/brand/kronberg-logo.png")}
             width={197}
           />
           <p className="mt-5 max-w-sm text-sm leading-6 text-white/72">

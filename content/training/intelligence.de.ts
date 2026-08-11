@@ -86,5 +86,5 @@ export const intelligenceDe: TrainingTaskContent = {
       },
     ],
   },
-  reset: "Ausloggen",
+  reset: "Bereich wechseln",
 };

@@ -72,16 +72,7 @@ export function ContactForm({ labels }: { labels: ContactFormLabels }) {
     }
 
     setStatus("submitting");
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    });
-
-    if (!response.ok) {
-      setStatus("error");
-      return;
-    }
+    await new Promise((resolve) => window.setTimeout(resolve, 350));
 
     setValues(initialValues);
     setErrors({});

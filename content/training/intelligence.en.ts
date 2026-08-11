@@ -86,5 +86,5 @@ export const intelligenceEn: TrainingTaskContent = {
       },
     ],
   },
-  reset: "Log out",
+  reset: "Change area",
 };

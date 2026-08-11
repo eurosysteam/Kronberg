@@ -87,5 +87,5 @@ export const leadershipDe: TrainingTaskContent = {
       },
     ],
   },
-  reset: "Ausloggen",
+  reset: "Bereich wechseln",
 };

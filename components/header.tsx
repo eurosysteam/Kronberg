@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/components/language-provider";
+import { withBasePath } from "@/lib/base-path";
 
 const navLinks = [
   { href: "/", key: "home" },
@@ -53,7 +54,7 @@ export function Header() {
             className="h-10 w-auto sm:h-12"
             height={120}
             priority
-            src="/brand/kronberg-logo.png"
+            src={withBasePath("/brand/kronberg-logo.png")}
             width={197}
           />
         </Link>
@@ -89,7 +90,7 @@ export function Header() {
               alt="eurosysteam"
               className="h-11 w-auto"
               height={48}
-              src="/brand/eurosysteamLogoNeu.jpg"
+              src={withBasePath("/brand/eurosysteamLogoNeu.jpg")}
               width={156}
             />
           </a>
@@ -107,7 +108,7 @@ export function Header() {
               alt="eurosysteam"
               className="h-8 w-auto sm:h-10"
               height={48}
-              src="/brand/eurosysteamLogoNeu.jpg"
+              src={withBasePath("/brand/eurosysteamLogoNeu.jpg")}
               width={156}
             />
           </a>

@@ -1,14 +1,14 @@
 "use client";
 
 import { PageFrame } from "@/components/page-frame";
-import { TrainingLoginForm } from "@/components/training-login-form";
+import { TrainingAreaSelector } from "@/components/training-area-selector";
 import { useLanguage } from "@/components/language-provider";
-import { trainingLoginContent } from "@/content/training/login";
+import { trainingOverviewContent } from "@/content/training/overview";
 import trainingImage from "@/pictures/Teams-Background_01.png";
 
 export default function TrainingPage() {
   const { locale } = useLanguage();
-  const content = trainingLoginContent[locale];
+  const content = trainingOverviewContent[locale];
 
   return (
     <PageFrame
@@ -16,16 +16,16 @@ export default function TrainingPage() {
       heroImage={{
         alt:
           locale === "de"
-            ? "eurosysteam-Hintergrundmotiv für den geschützten Trainingsbereich"
-            : "eurosysteam background motif for the protected training area",
+            ? "eurosysteam-Hintergrundmotiv für die Trainingsbereiche"
+            : "eurosysteam background motif for the training areas",
         src: trainingImage,
       }}
       intro={content.intro}
       title={content.title}
     >
       <section className="bg-[var(--color-light)] px-5 py-20 sm:px-8">
-        <div className="mx-auto max-w-xl">
-          <TrainingLoginForm labels={content} />
+        <div className="mx-auto max-w-5xl">
+          <TrainingAreaSelector labels={content} />
         </div>
       </section>
     </PageFrame>

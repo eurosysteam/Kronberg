@@ -11,6 +11,7 @@ import { intelligenceEn } from "@/content/training/intelligence.en";
 import { leadershipDe } from "@/content/training/leadership.de";
 import { leadershipEn } from "@/content/training/leadership.en";
 import type { TrainingArea, TrainingTaskContent } from "@/content/training/types";
+import { withBasePath } from "@/lib/base-path";
 
 const contentMap: Record<TrainingArea, { de: TrainingTaskContent; en: TrainingTaskContent }> = {
   leadership: {
@@ -104,7 +105,7 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
                     <a
                       className="inline-flex items-center gap-2 rounded border border-white/45 px-5 py-3 text-sm font-bold text-white transition hover:border-[var(--color-cyan)] hover:bg-white/10"
                       download
-                      href={download.href}
+                      href={withBasePath(download.href)}
                       key={download.href}
                     >
                       <Download aria-hidden="true" className="h-4 w-4 text-[var(--color-cyan)]" />
