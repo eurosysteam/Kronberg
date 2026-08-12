@@ -13,11 +13,10 @@ export const leadershipDe: TrainingTaskContent = {
     {
       title: "1. Ihre Rolle und der gemeinsame Arbeitsauftrag",
       body: [
-        "Sie übernehmen die Rolle von Sabine Vogel, Head of Sales, Marketing & Technischer Service bei der Kronberg Fördertechnik Gruppe. Sie verantworten einen kundennahen Bereich mit rund 570 Mitarbeitenden. Dazu gehören Vertrieb DACH, International Sales, Key Account Management, Sales Engineering, Marketing sowie Technischer Service & After Sales.",
-        "Neben Umsatz, Kundenbeziehungen und Marktposition gehören Führung, Zusammenarbeit, Kompetenzentwicklung, Qualität und realistische Ressourcensteuerung zu Ihren Aufgaben.",
+        "Sie übernehmen die Rolle von **Sabine Vogel, Head of Sales, Marketing & Technischer Service bei der Kronberg Fördertechnik Gruppe**. Sie verantworten einen kundennahen Bereich mit rund 570 Mitarbeitenden. Dazu gehören Vertrieb DACH, International Sales, Key Account Management, Sales Engineering, Marketing sowie Technischer Service & After Sales.",
       ],
       callout:
-        "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie dafür einen funktionsfähigen KI-Bot-Prototypen.",
+        "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie dafür einen funktionsfähigen KI-Bot-Prototypen, der Sabine bei ihrer Entscheidungsfindung berät, ohne die Entscheidung selbstständig zu treffen.",
     },
     {
       title: "2. Drei mögliche Führungsherausforderungen",
@@ -25,25 +24,35 @@ export const leadershipDe: TrainingTaskContent = {
     {
       title: "2.1 Fall 1 – Konflikt zwischen zwei Führungskräften",
       body: [
-        "Ausgangslage: Oliver Brandt, Leiter Key Account Management, und Jana Weber, Leiterin Service DACH, streiten über Servicezusagen für Projekt Atlas. Der Konflikt ist per E-Mail eskaliert, Teams beginnen sich zu positionieren und in fünf Tagen findet ein gemeinsamer Kundentermin statt. Sabine muss eine tragfähige Lösung für Kunde und Organisation vorbereiten und die Zusammenarbeit der beiden Führungskräfte stabilisieren.",
+        "**Ausgangslage:**",
+        "Oliver Brandt, Leiter Key Account Management, und Jana Weber, Leiterin Service DACH, streiten über Servicezusagen für Projekt Atlas. Der Konflikt ist per E-Mail eskaliert, die Teams beginnen sich zu positionieren und in fünf Tagen findet ein gemeinsamer Kundentermin statt.",
+        "Sabine muss eine tragfähige Lösung für den Kunden und die Organisation vorbereiten und gleichzeitig die Zusammenarbeit der beiden Führungskräfte stabilisieren.",
+        "Der KI-Prototyp soll sie bei der Entwicklung einer Lösung beraten und sie bei der Vorbereitung unterstützen, indem er unter anderem Gespräche mit den am Konflikt beteiligten Führungskräften simuliert.",
       ],
     },
     {
       title: "2.2 Fall 2 – KI-Strategie und Befähigung der Abteilung",
       body: [
-        "Ausgangslage: Im Bereich wird KI uneinheitlich genutzt. Befragungsdaten, Prozesskennzahlen, dokumentierte Vorfälle, Plattformoptionen, Umsetzungs- und Kapazitätsgrenzen sowie unterschiedliche Stakeholderpositionen liegen vor. Gleichzeitig bestehen unter Mitarbeitenden Unsicherheiten über mögliche Stellenkürzungen und Veränderungen von Aufgaben und Rollen. Sabine muss innerhalb des Quartals einen Bereichsrahmen entwickeln und innerhalb von sechs Monaten zwei Piloten bewerten.",
+        "**Ausgangslage:**",
+        "Im Bereich wird KI bislang uneinheitlich genutzt. Befragungsdaten, Prozesskennzahlen, dokumentierte Vorfälle, Plattformoptionen, Umsetzungs- und Kapazitätsgrenzen sowie unterschiedliche Stakeholderpositionen liegen vor. Gleichzeitig bestehen unter den Mitarbeitenden Unsicherheiten über mögliche Stellenkürzungen sowie Veränderungen von Aufgaben und Rollen.",
+        "Sabine muss innerhalb des Quartals einen Bereichsrahmen entwickeln und innerhalb von sechs Monaten zwei Piloten bewerten.",
+        "Der KI-Prototyp soll sie bei der Ausarbeitung der Strategie beraten, unter anderem durch die strukturierte Aufbereitung und Einordnung der vorhandenen Informationen.",
       ],
     },
     {
       title: "2.3 Fall 3 – Akuter Ressourcen- und Priorisierungsengpass",
       body: [
-        "Ausgangslage: Vier kritische Arbeitsstränge treffen auf begrenzte Fachkapazität, konkrete Arbeitspakete, Abhängigkeiten, Belastungsgrenzen und externe Unterstützungsmöglichkeiten. Sabine muss innerhalb von 24 Stunden eine belastbare Zuordnung für die ersten zehn Arbeitstage festlegen.",
+        "**Ausgangslage:**",
+        "Vier kritische Arbeitsstränge treffen auf begrenzte Fachkapazitäten, konkrete Arbeitspakete, Abhängigkeiten, Belastungsgrenzen und externe Unterstützungsmöglichkeiten.",
+        "Sabine muss innerhalb von 24 Stunden eine belastbare Zuordnung für die ersten zehn Arbeitstage festlegen.",
+        "Der KI-Prototyp soll sie dabei unterstützen, mögliche Lösungen für den Ressourcenengpass zu entwickeln und zu bewerten.",
       ],
     },
     {
       title: "Ihre Aufgabe",
       body: [
-        "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie einen funktionsfähigen KI-Bot-Prototypen. Der Bot soll Sabine beim Bearbeiten der Herausforderung unterstützen: Er strukturiert Informationen, fördert Reflexion, macht Handlungsoptionen vergleichbar und bereitet Gespräche oder Entscheidungen vor. Er löst die Führungsherausforderung nicht selbst und übernimmt keine Entscheidung.",
+        "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie einen funktionsfähigen KI-Bot-Prototypen.",
+        "Der Bot soll Sabine bei der Bearbeitung der Herausforderung unterstützen: Er strukturiert Informationen, fördert Reflexion, macht Handlungsoptionen vergleichbar und bereitet Gespräche oder Entscheidungen vor. **Er löst die Führungsherausforderung nicht selbst und übernimmt keine Entscheidung.**",
         "Die Lösung wird aus Sicht von Sabine Vogel entwickelt. Sie bleibt Auftraggeberin und verantwortliche Entscheiderin. Weitere beteiligte Rollen und angrenzende Bereiche dürfen sinnvoll in den Arbeitsablauf einbezogen werden.",
         "**Phase 1 – Unterstützungs- und Entscheidungslogik entwickeln**",
         "Arbeiten Sie zunächst ohne Laptop. Entwickeln Sie auf einem Plakat die Arbeitsmethode Ihres Bots. Lösen Sie den Führungsfall noch nicht und erstellen Sie noch keinen Prompt.",
@@ -66,9 +75,11 @@ export const leadershipDe: TrainingTaskContent = {
         "Prüfen Sie, ob der Bot Unsicherheit kennzeichnet, menschliche Entscheidungen einfordert und seine Grenzen einhält.",
         "Verbessern Sie Prompt und Wissensbasis iterativ und bereiten Sie die Demonstration vor.",
         "**Ergebnis:** Ein getesteter KI-Bot-Prototyp mit passender Wissensbasis.",
-        "**Abschluss – Live-Demonstration**",
-        "Bereiten Sie eine **5- bis 7-minütige Präsentation** inklusive kurzer Live-Demo vor. Zeigen Sie dabei mindestens einen menschlichen Entscheidungspunkt sowie eine wichtige Erkenntnis aus dem Testen.",
       ],
+    },
+    {
+      title: "Abschluss – Live-Demonstration",
+      body: ["Bereiten Sie eine **5- bis 7-minütige Live-Demo** vor."],
     },
   ],
   support: {

@@ -13,11 +13,10 @@ export const leadershipEn: TrainingTaskContent = {
     {
       title: "1. Your role and the shared assignment",
       body: [
-        "You take on the role of Sabine Vogel, Head of Sales, Marketing & Technical Service at Kronberg Fördertechnik Gruppe. You are responsible for a customer-facing division with around 570 employees. It includes DACH Sales, International Sales, Key Account Management, Sales Engineering, Marketing, and Technical Service & After Sales.",
-        "In addition to revenue, customer relationships, and market position, your responsibilities include leadership, collaboration, competence development, quality, and realistic resource management.",
+        "You take on the role of **Sabine Vogel, Head of Sales, Marketing & Technical Service at Kronberg Fördertechnik Gruppe**. You are responsible for a customer-facing division with around 570 employees. It includes DACH Sales, International Sales, Key Account Management, Sales Engineering, Marketing, and Technical Service & After Sales.",
       ],
       callout:
-        "Choose one of the three leadership challenges and develop a functional AI bot prototype for it.",
+        "Choose one of the three leadership challenges and develop a functional AI bot prototype that advises Sabine in her decision-making without making the decision itself.",
     },
     {
       title: "2. Three possible leadership challenges",
@@ -25,25 +24,35 @@ export const leadershipEn: TrainingTaskContent = {
     {
       title: "2.1 Case 1 – Conflict between two managers",
       body: [
-        "Initial situation: Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are in conflict over service commitments for Project Atlas. The conflict has escalated by email, teams are beginning to take sides, and a joint customer meeting will take place in five days. Sabine must prepare a viable solution for both the customer and the organization and stabilize collaboration between the two managers.",
+        "**Initial situation:**",
+        "Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are in conflict over service commitments for Project Atlas. The conflict has escalated by email, the teams are beginning to take sides, and a joint customer meeting will take place in five days.",
+        "Sabine must prepare a viable solution for the customer and the organization while also stabilizing collaboration between the two managers.",
+        "The AI prototype should advise her as she develops a solution and support her preparation, including by simulating conversations with the managers involved in the conflict.",
       ],
     },
     {
       title: "2.2 Case 2 – AI strategy and departmental enablement",
       body: [
-        "Initial situation: AI use within the division is inconsistent. Survey data, process metrics, documented incidents, platform options, implementation and capacity constraints, and differing stakeholder positions are available. At the same time, employees are uncertain about possible job cuts and changes to tasks and roles. Sabine must develop a divisional framework within the quarter and evaluate two pilots within six months.",
+        "**Initial situation:**",
+        "AI use within the division has so far been inconsistent. Survey data, process metrics, documented incidents, platform options, implementation and capacity constraints, and differing stakeholder positions are available. At the same time, employees are uncertain about possible job cuts and changes to tasks and roles.",
+        "Sabine must develop a divisional framework within the quarter and evaluate two pilots within six months.",
+        "The AI prototype should advise her as she develops the strategy, including by structuring and contextualizing the available information.",
       ],
     },
     {
       title: "2.3 Case 3 – Acute resource and prioritization bottleneck",
       body: [
-        "Initial situation: Four critical workstreams compete for limited specialist capacity and involve specific work packages, dependencies, workload limits, and external support options. Sabine must define a robust allocation for the first ten working days within 24 hours.",
+        "**Initial situation:**",
+        "Four critical workstreams compete for limited specialist capacity and involve specific work packages, dependencies, workload limits, and external support options.",
+        "Sabine must define a robust allocation for the first ten working days within 24 hours.",
+        "The AI prototype should support her in developing and evaluating possible solutions to the resource bottleneck.",
       ],
     },
     {
       title: "Your task",
       body: [
-        "Choose one of the three leadership challenges and develop a functional AI bot prototype. The bot should support Sabine in addressing the challenge: it structures information, encourages reflection, makes options comparable, and prepares conversations or decisions. It does not solve the leadership challenge itself and does not make decisions.",
+        "Choose one of the three leadership challenges and develop a functional AI bot prototype.",
+        "The bot should support Sabine in addressing the challenge: it structures information, encourages reflection, makes options comparable, and prepares conversations or decisions. **It does not solve the leadership challenge itself and does not make decisions.**",
         "The solution is developed from Sabine Vogel's perspective. She remains the client and the accountable decision-maker. Other roles and adjacent departments may be included in the workflow where appropriate.",
         "**Phase 1 – Develop the support and decision logic**",
         "Begin without a laptop. Develop the working method for your bot on a poster. Do not solve the leadership case or write a prompt yet.",
@@ -66,9 +75,11 @@ export const leadershipEn: TrainingTaskContent = {
         "Check whether the bot marks uncertainty, requires human decisions, and respects its boundaries.",
         "Iteratively improve the prompt and knowledge base and prepare the demonstration.",
         "**Result:** A tested AI bot prototype with a suitable knowledge base.",
-        "**Conclusion – Live demonstration**",
-        "Prepare a **5- to 7-minute presentation** including a short live demo. Show at least one human decision point and one important insight from testing.",
       ],
+    },
+    {
+      title: "Conclusion – Live demonstration",
+      body: ["Prepare a **5- to 7-minute live demo**."],
     },
   ],
   support: {
