@@ -53,7 +53,6 @@ export const leadershipDe: TrainingTaskContent = {
       body: [
         "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie einen funktionsfähigen KI-Bot-Prototypen.",
         "Der Bot soll Sabine bei der Bearbeitung der Herausforderung unterstützen: Er strukturiert Informationen, fördert Reflexion, macht Handlungsoptionen vergleichbar und bereitet Gespräche oder Entscheidungen vor. **Er löst die Führungsherausforderung nicht selbst und übernimmt keine Entscheidung.**",
-        "Die Lösung wird aus Sicht von Sabine Vogel entwickelt. Sie bleibt Auftraggeberin und verantwortliche Entscheiderin. Weitere beteiligte Rollen und angrenzende Bereiche dürfen sinnvoll in den Arbeitsablauf einbezogen werden.",
         "**Phase 1 – Unterstützungs- und Entscheidungslogik entwickeln**",
         "Arbeiten Sie zunächst ohne Laptop. Entwickeln Sie auf einem Plakat die Arbeitsmethode Ihres Bots. Lösen Sie den Führungsfall noch nicht und erstellen Sie noch keinen Prompt.",
         "**Leitfragen**",
