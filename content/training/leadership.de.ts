@@ -16,7 +16,7 @@ export const leadershipDe: TrainingTaskContent = {
         "Sie übernehmen die Rolle von **Sabine Vogel, Head of Sales, Marketing & Technischer Service bei der Kronberg Fördertechnik Gruppe**. Sie verantworten einen kundennahen Bereich mit rund 570 Mitarbeitenden. Dazu gehören Vertrieb DACH, International Sales, Key Account Management, Sales Engineering, Marketing sowie Technischer Service & After Sales.",
       ],
       callout:
-        "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie dafür einen funktionsfähigen KI-Bot-Prototypen, der Sabine bei ihrer Entscheidungsfindung berät, ohne die Entscheidung selbstständig zu treffen.",
+        "Wählen Sie eine der drei Führungsherausforderungen und entwickeln Sie dafür einen funktionsfähigen KI-Bot-Prototypen, der Sabine bei ihrer Entscheidungsfindung berät, ohne die Entscheidung selbstständig zu treffen. Priorität hat die Entwicklung eines guten Beraters. Die Lösung der Führungsherausforderung dient lediglich als Anwendungsgrundlage und steht nicht im Mittelpunkt der Aufgabe.",
     },
     {
       title: "2. Drei mögliche Führungsherausforderungen",
