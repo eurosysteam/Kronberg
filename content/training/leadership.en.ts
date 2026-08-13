@@ -53,6 +53,7 @@ export const leadershipEn: TrainingTaskContent = {
       body: [
         "Choose one of the three leadership challenges and develop a functional AI bot prototype.",
         "The bot should support Sabine in addressing the challenge: it structures information, encourages reflection, makes options comparable, and prepares conversations or decisions. **It does not solve the leadership challenge itself and does not make decisions.**",
+        "**Complete the task in three phases**",
         "**Phase 1 – Develop the support and decision logic**",
         "Begin without a laptop. Develop the working method for your bot on a poster. Do not solve the leadership case or write a prompt yet.",
         "**Guiding questions**",
