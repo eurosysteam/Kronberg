@@ -16,7 +16,7 @@ export const leadershipEn: TrainingTaskContent = {
         "You take on the role of **Sabine Vogel, Head of Sales, Marketing & Technical Service at Kronberg Fördertechnik Gruppe**. You are responsible for a customer-facing division with around 570 employees. It includes DACH Sales, International Sales, Key Account Management, Sales Engineering, Marketing, and Technical Service & After Sales.",
       ],
       callout:
-        "Choose one of the three leadership challenges and develop a functional AI bot prototype that advises Sabine in her decision-making without making the decision itself. The priority is to develop an effective advisor. Solving the leadership challenge serves only as the application context and is not the focus of the task.",
+        "Choose one of the three leadership challenges and develop a functional AI bot prototype that advises Sabine in her decision-making without making the decision itself. The priority is to develop an effective advisor. Solving the leadership challenge serves only as the application context and is not the focus of the task. Further information about the three cases can be found in the Leadership Knowledge Base.",
     },
     {
       title: "2. Three possible leadership challenges",
