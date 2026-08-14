@@ -50,6 +50,8 @@ export const leadershipEn: TrainingTaskContent = {
         "Four critical workstreams compete for limited specialist capacity and involve specific work packages, dependencies, workload limits, and external support options.",
         "Sabine must define a robust allocation for the first ten working days within 24 hours.",
         "The AI prototype should support her in developing and evaluating possible solutions to the resource bottleneck.",
+        "**Overview of the available information:**",
+        "For Case 3, information is available about four critical workstreams, their deadlines, their economic or operational significance, and their respective staffing requirements. The documented information also covers the skills and available capacity of the people who can be assigned, as well as existing overtime, role constraints, and approval authority. The knowledge base contains specific work packages and effort estimates, dependencies between tasks, non-negotiable deadlines, and possible flexibility in scope. It also provides details about internal and external support options, their availability, costs, and limitations, along with a preliminary budget reserve and binding workload limits. Outstanding uncertainties include the duration of the service escalation, the limited availability of required reviews, and possible additional customer requirements. An allocation for the first ten working days is required within 24 hours; due to lead times, an initial decision on possible external support must be made no later than day 2.",
       ],
     },
     {

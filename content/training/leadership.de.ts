@@ -50,6 +50,8 @@ export const leadershipDe: TrainingTaskContent = {
         "Vier kritische Arbeitsstränge treffen auf begrenzte Fachkapazitäten, konkrete Arbeitspakete, Abhängigkeiten, Belastungsgrenzen und externe Unterstützungsmöglichkeiten.",
         "Sabine muss innerhalb von 24 Stunden eine belastbare Zuordnung für die ersten zehn Arbeitstage festlegen.",
         "Der KI-Prototyp soll sie dabei unterstützen, mögliche Lösungen für den Ressourcenengpass zu entwickeln und zu bewerten.",
+        "**Überblick über die vorliegenden Informationen:**",
+        "Für Fall 3 liegen Informationen zu vier kritischen Arbeitssträngen, ihren Terminen, ihrer wirtschaftlichen oder operativen Bedeutung und ihrem jeweiligen Personalbedarf vor. Dokumentiert sind außerdem die Kompetenzen und verfügbaren Kapazitäten der einsetzbaren Personen sowie bestehende Überstunden, Rollenbeschränkungen und Freigabeberechtigungen. Die Wissensbasis enthält konkrete Arbeitspakete und Aufwände, Abhängigkeiten zwischen den Aufgaben, nicht verhandelbare Termine und mögliche Spielräume beim Leistungsumfang. Darüber hinaus stehen Angaben zu internen und externen Unterstützungsmöglichkeiten, deren Verfügbarkeit, Kosten und Grenzen sowie zu einer vorläufigen Budgetreserve und verbindlichen Belastungsgrenzen zur Verfügung. Offene Unsicherheiten betreffen unter anderem die Dauer der Serviceeskalation, die punktuelle Verfügbarkeit notwendiger Prüfungen und mögliche zusätzliche Kundenanforderungen. Innerhalb von 24 Stunden wird eine Zuordnung für die ersten zehn Arbeitstage benötigt; über eine mögliche externe Beauftragung muss wegen der Vorlaufzeit spätestens an Tag 2 grundsätzlich entschieden werden.",
       ],
     },
     {
