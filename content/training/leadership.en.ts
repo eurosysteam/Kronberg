@@ -22,7 +22,7 @@ export const leadershipEn: TrainingTaskContent = {
       title: "2. Three possible leadership challenges",
     },
     {
-      title: "2.1 Case 1 – Conflict between two managers",
+      title: "Case 1 – Conflict between two managers",
       body: [
         "**Initial situation:**",
         "Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are in conflict over service commitments for Project Atlas. The conflict has escalated by email, the teams are beginning to take sides, and a joint customer meeting will take place in five days.",
@@ -31,7 +31,7 @@ export const leadershipEn: TrainingTaskContent = {
       ],
     },
     {
-      title: "2.2 Case 2 – AI strategy and departmental enablement",
+      title: "Case 2 – AI strategy and departmental enablement",
       body: [
         "**Initial situation:**",
         "AI use within the division has so far been inconsistent. Survey data, process metrics, documented incidents, platform options, implementation and capacity constraints, and differing stakeholder positions are available. At the same time, employees are uncertain about possible job cuts and changes to tasks and roles.",
@@ -40,7 +40,7 @@ export const leadershipEn: TrainingTaskContent = {
       ],
     },
     {
-      title: "2.3 Case 3 – Acute resource and prioritization bottleneck",
+      title: "Case 3 – Acute resource and prioritization bottleneck",
       body: [
         "**Initial situation:**",
         "Four critical workstreams compete for limited specialist capacity and involve specific work packages, dependencies, workload limits, and external support options.",

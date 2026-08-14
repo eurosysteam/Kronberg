@@ -22,7 +22,7 @@ export const leadershipDe: TrainingTaskContent = {
       title: "2. Drei mögliche Führungsherausforderungen",
     },
     {
-      title: "2.1 Fall 1 – Konflikt zwischen zwei Führungskräften",
+      title: "Fall 1 – Konflikt zwischen zwei Führungskräften",
       body: [
         "**Ausgangslage:**",
         "Oliver Brandt, Leiter Key Account Management, und Jana Weber, Leiterin Service DACH, streiten über Servicezusagen für Projekt Atlas. Der Konflikt ist per E-Mail eskaliert, die Teams beginnen sich zu positionieren und in fünf Tagen findet ein gemeinsamer Kundentermin statt.",
@@ -31,7 +31,7 @@ export const leadershipDe: TrainingTaskContent = {
       ],
     },
     {
-      title: "2.2 Fall 2 – KI-Strategie und Befähigung der Abteilung",
+      title: "Fall 2 – KI-Strategie und Befähigung der Abteilung",
       body: [
         "**Ausgangslage:**",
         "Im Bereich wird KI bislang uneinheitlich genutzt. Befragungsdaten, Prozesskennzahlen, dokumentierte Vorfälle, Plattformoptionen, Umsetzungs- und Kapazitätsgrenzen sowie unterschiedliche Stakeholderpositionen liegen vor. Gleichzeitig bestehen unter den Mitarbeitenden Unsicherheiten über mögliche Stellenkürzungen sowie Veränderungen von Aufgaben und Rollen.",
@@ -40,7 +40,7 @@ export const leadershipDe: TrainingTaskContent = {
       ],
     },
     {
-      title: "2.3 Fall 3 – Akuter Ressourcen- und Priorisierungsengpass",
+      title: "Fall 3 – Akuter Ressourcen- und Priorisierungsengpass",
       body: [
         "**Ausgangslage:**",
         "Vier kritische Arbeitsstränge treffen auf begrenzte Fachkapazitäten, konkrete Arbeitspakete, Abhängigkeiten, Belastungsgrenzen und externe Unterstützungsmöglichkeiten.",

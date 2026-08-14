@@ -70,7 +70,7 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
               <div className="mt-10 grid gap-10">
                 {content.sections.map((section) => {
                   const isLeadershipCase =
-                    area === "leadership" && /^2\.[1-3]\s+(Fall|Case)\b/i.test(section.title);
+                    area === "leadership" && /^(Fall|Case)\s+[1-3]\b/i.test(section.title);
 
                   return isLeadershipCase ? (
                     <details
