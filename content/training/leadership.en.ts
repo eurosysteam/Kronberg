@@ -28,6 +28,8 @@ export const leadershipEn: TrainingTaskContent = {
         "Oliver Brandt, Head of Key Account Management, and Jana Weber, Head of Service DACH, are in conflict over service commitments for Project Atlas. The conflict has escalated by email, the teams are beginning to take sides, and a joint customer meeting will take place in five days.",
         "Sabine must prepare a viable solution for the customer and the organization while also stabilizing collaboration between the two managers.",
         "The AI prototype should advise her as she develops a solution and support her preparation, including by simulating conversations with the managers involved in the conflict.",
+        "**Overview of the available information:**",
+        "For Case 1, information is available about the strategically important existing customer, the current service contract, and the additional services requested during the eight-week ramp-up phase. The documented information also includes the service levels Oliver Brandt mentioned to the customer, which have not yet received internal approval, as well as the capacity, cost, spare-parts, and security questions raised by Jana Weber. The knowledge base contains details about the escalation to date, the interests and positions of those involved, available service capacity, economic and contractual constraints, and the customer's expectations. Several points have not yet been fully assessed. By tomorrow, Sabine must determine which service levels may be discussed provisionally at the customer meeting, which will take place in five days.",
       ],
     },
     {

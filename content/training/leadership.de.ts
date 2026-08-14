@@ -28,6 +28,8 @@ export const leadershipDe: TrainingTaskContent = {
         "Oliver Brandt, Leiter Key Account Management, und Jana Weber, Leiterin Service DACH, streiten über Servicezusagen für Projekt Atlas. Der Konflikt ist per E-Mail eskaliert, die Teams beginnen sich zu positionieren und in fünf Tagen findet ein gemeinsamer Kundentermin statt.",
         "Sabine muss eine tragfähige Lösung für den Kunden und die Organisation vorbereiten und gleichzeitig die Zusammenarbeit der beiden Führungskräfte stabilisieren.",
         "Der KI-Prototyp soll sie bei der Entwicklung einer Lösung beraten und sie bei der Vorbereitung unterstützen, indem er unter anderem Gespräche mit den am Konflikt beteiligten Führungskräften simuliert.",
+        "**Überblick über die vorliegenden Informationen:**",
+        "Für Fall 1 liegen Informationen zum strategisch wichtigen Bestandskunden, zum bestehenden Servicevertrag und zu den zusätzlich geforderten Leistungen während der achtwöchigen Hochlaufphase vor. Dokumentiert sind außerdem die von Oliver Brandt gegenüber dem Kunden genannten, intern noch nicht freigegebenen Leistungswerte sowie die von Jana Weber benannten Kapazitäts-, Kosten-, Ersatzteil- und Sicherheitsfragen. Die Wissensbasis enthält Angaben zum bisherigen Eskalationsverlauf, zu den Interessen und Positionen der Beteiligten, zur verfügbaren Servicekapazität, zu wirtschaftlichen und vertraglichen Rahmenbedingungen sowie zu den Erwartungen des Kunden. Mehrere Punkte sind noch nicht abschließend geprüft. Sabine muss bis morgen festlegen, welche Leistungswerte im Kundentermin vorläufig besprochen werden dürfen; der Termin findet in fünf Tagen statt.",
       ],
     },
     {
