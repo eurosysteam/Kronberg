@@ -69,7 +69,7 @@ export const leadershipEn: TrainingTaskContent = {
         "**Guiding questions**",
         "**How should the bot clarify and structure the situation?** Define how it distinguishes facts, assessments, assumptions, interests, and open questions.",
         "**How may the bot provide advice?** Determine how it helps Sabine develop and compare her own options and presents conditions and risks transparently without prescribing a solution.",
-        "**Where must people make the decision?** Identify the decisions, approvals, and responsibilities that remain with Sabine Vogel or other accountable people.",
+        "**Where are human decisions required?** Identify the decisions, approvals, and responsibilities that remain with Sabine Vogel or other accountable people.",
         "**Result:** A visual method design with a clear sequence, required inputs, bot follow-up questions, and human decision points.",
         "**Phase 2 – Refine the idea with AI**",
         "Use the meta-skill or a regular AI chat to critically review and develop your analog method design.",
