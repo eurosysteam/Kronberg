@@ -10,7 +10,11 @@ import { intelligenceDe } from "@/content/training/intelligence.de";
 import { intelligenceEn } from "@/content/training/intelligence.en";
 import { leadershipDe } from "@/content/training/leadership.de";
 import { leadershipEn } from "@/content/training/leadership.en";
-import type { TrainingArea, TrainingTaskContent } from "@/content/training/types";
+import type {
+  TrainingArea,
+  TrainingSection,
+  TrainingTaskContent,
+} from "@/content/training/types";
 import { withBasePath } from "@/lib/base-path";
 
 const contentMap: Record<TrainingArea, { de: TrainingTaskContent; en: TrainingTaskContent }> = {
@@ -64,28 +68,35 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
               </div>
 
               <div className="mt-10 grid gap-10">
-                {content.sections.map((section) => (
-                  <section key={section.title}>
-                    <h2 className="text-2xl font-bold text-[var(--color-navy)]">
-                      {section.title}
-                    </h2>
-                    {section.body ? <TrainingBody paragraphs={section.body} /> : null}
-                    {section.items ? (
-                      <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-7 text-[var(--color-muted)] marker:text-[var(--color-cyan)]">
-                        {section.items.map((item) => (
-                          <li className="pl-1" key={item}>
-                            <InlineText text={item} />
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
-                    {section.callout ? (
-                      <p className="mt-5 rounded border-l-4 border-[var(--color-cyan)] bg-[var(--color-light)] px-5 py-4 font-semibold leading-7 text-[var(--color-navy)]">
-                        {section.callout}
-                      </p>
-                    ) : null}
-                  </section>
-                ))}
+                {content.sections.map((section) => {
+                  const isLeadershipCase =
+                    area === "leadership" && /^2\.[1-3]\s+(Fall|Case)\b/i.test(section.title);
+
+                  return isLeadershipCase ? (
+                    <details
+                      className="group block w-full rounded-lg border border-[var(--color-line)] bg-[var(--color-light)] text-left open:border-[var(--color-cyan)]"
+                      key={section.title}
+                    >
+                      <summary className="flex w-full cursor-pointer list-none items-center gap-4 px-5 py-4 text-left font-bold text-[var(--color-navy)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-cyan)] [&::-webkit-details-marker]:hidden">
+                        <span className="min-w-0 flex-1 text-left">{section.title}</span>
+                        <ChevronDown
+                          aria-hidden="true"
+                          className="h-5 w-5 shrink-0 text-[var(--color-cyan)] transition-transform group-open:rotate-180 motion-reduce:transition-none"
+                        />
+                      </summary>
+                      <div className="border-t border-[var(--color-line)] px-5 pb-5">
+                        <TrainingSectionContent section={section} />
+                      </div>
+                    </details>
+                  ) : (
+                    <section key={section.title}>
+                      <h2 className="text-2xl font-bold text-[var(--color-navy)]">
+                        {section.title}
+                      </h2>
+                      <TrainingSectionContent section={section} />
+                    </section>
+                  );
+                })}
               </div>
 
               <section className="mt-12 rounded-lg bg-[var(--color-navy)] p-6 text-white">
@@ -123,6 +134,28 @@ export function TrainingTaskPage({ area }: { area: TrainingArea }) {
         </section>
       </main>
       <Footer />
+    </>
+  );
+}
+
+function TrainingSectionContent({ section }: { section: TrainingSection }) {
+  return (
+    <>
+      {section.body ? <TrainingBody paragraphs={section.body} /> : null}
+      {section.items ? (
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-7 text-[var(--color-muted)] marker:text-[var(--color-cyan)]">
+          {section.items.map((item) => (
+            <li className="pl-1" key={item}>
+              <InlineText text={item} />
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {section.callout ? (
+        <p className="mt-5 rounded border-l-4 border-[var(--color-cyan)] bg-[var(--color-light)] px-5 py-4 font-semibold leading-7 text-[var(--color-navy)]">
+          {section.callout}
+        </p>
+      ) : null}
     </>
   );
 }
